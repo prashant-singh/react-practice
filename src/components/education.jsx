@@ -4,36 +4,33 @@ class Education extends Component {
     state = {}
 
     courseNameStyle = {
-        fontSize: 15
+        fontSize: 15,
+        fontWeight:'light'
     }
 
     instituteStyle = {
-        fontSize: 15,
-        color: 'grey',
-        fontFamily: 'sans-serif'
+        fontSize: 14,
     }
 
     dateStyle = {
         fontSize: 12,
-        fontWeight: 'bold',
-        fontFamily: 'sans-serif'
     }
 
     render() {
         return (
             <React.Fragment>
-                <div className='row justify-content-center'>
-                    <div className='col-6'>
+                <div className='row'>
+                    <div className='col'>
                         <h5 style={this.courseNameStyle}>
                             {this.props.currentCourse.courseName}
                         </h5>
-                        <h5 style={this.instituteStyle}> @ {this.props.currentCourse.instituteName}
-                            <small className='text-muted'>
+                        <h5 style={this.courseNameStyle}> @ {this.props.currentCourse.instituteName}
+                            {/* <small className='text-muted'> */}
                                 &nbsp;|&nbsp;{this.props.currentCourse.board}
-                            </small>
+                            {/* </small> */}
                         </h5>
                     </div>
-                    <div className='col-6'>
+                    <div className='col'>
                         <h6 style={this.dateStyle}>
                             {this.props.currentCourse.passingYear}
                         </h6>

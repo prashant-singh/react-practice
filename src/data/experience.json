@@ -1,0 +1,29 @@
+[
+	{
+		"id": 1,
+		"position": "Senior Software Engineer",
+		"companyName": "Byjus",
+		"startDate": "2022",
+		"summary":"Joined as a Sr. Software Engineer.",
+		"webURL":"http://byjus.com"
+	},
+	{
+		"id": 2,
+		"position": "Senior Game Developer",
+		"companyName": "Masala Games",
+		"startDate": "2020",
+		"endDate": "2022",
+		"summary":"Joined as a Sr. Game Developer and have been working on some Cocos Creator projects and also new experiments with Unity3D.",
+		"webURL":"http://masalagames.com"
+	},
+	{
+		"id": 3,
+		"position": "Technical Head/Sr. Game Developer",
+		"companyName": "Yudiz",
+		"startDate": "2015",
+		"endDate": "2020",
+		"summary":"Started my career as a junior and made my way to the Technical Head of the department. An amazing experience.",
+		"webURL":"http://yudiz.com"
+
+	}
+]

@@ -11,15 +11,15 @@ class Educations extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className='row justify-content-center mt-3'>
-                    <div className='col-6'>
+                <div className='row'>
+                    <div className='col'>
                         <h2>
                             Educations
                         </h2>
                     </div>
                 </div>
-                <div className='row justify-content-center'>
-                    <div className='col-6'>
+                <div className='row'>
+                    <div className='col'>
                         {
                             this.state.courses.map(course => <ul key={course.id}><Education
                                 key={course.id}

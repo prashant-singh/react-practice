@@ -11,8 +11,9 @@ class App extends Component {
   state = {}
 
   mainStyle = {
-    marginLeft: 100,
-    marginRight: 100
+    marginTop: 100,
+    width:'auto',
+    maxWidth:820
   }
 
   render() {

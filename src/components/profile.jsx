@@ -4,14 +4,14 @@ const Profile = () => {
     return (
         <React.Fragment>
             <div className="row">
-                <div className="col">
+                <div className="col offset-2">
                     <h1>
                         Prashant Singh
                     </h1>
                 </div>
             </div>
             <div className='row'>
-                <div className='col'>
+                <div className='col offset-2'>
                     <h5 className='lead'>
                         Sr. Software Engineer
                         <small className="text-muted"> @ Byju's</small>

@@ -5,11 +5,7 @@ class Education extends Component {
 
     courseNameStyle = {
         fontSize: 15,
-        fontWeight:'light'
-    }
-
-    instituteStyle = {
-        fontSize: 14,
+        fontWeight: 'light'
     }
 
     dateStyle = {
@@ -20,17 +16,17 @@ class Education extends Component {
         return (
             <React.Fragment>
                 <div className='row'>
-                    <div className='col'>
+                    <div className='col-6'>
                         <h5 style={this.courseNameStyle}>
                             {this.props.currentCourse.courseName}
                         </h5>
                         <h5 style={this.courseNameStyle}> @ {this.props.currentCourse.instituteName}
                             {/* <small className='text-muted'> */}
-                                &nbsp;|&nbsp;{this.props.currentCourse.board}
+                            &nbsp;|&nbsp;{this.props.currentCourse.board}
                             {/* </small> */}
                         </h5>
                     </div>
-                    <div className='col'>
+                    <div className='col-6'>
                         <h6 style={this.dateStyle}>
                             {this.props.currentCourse.passingYear}
                         </h6>

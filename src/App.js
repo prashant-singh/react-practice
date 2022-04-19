@@ -10,22 +10,16 @@ import Educations from './components/educations';
 class App extends Component {
   state = {}
 
-  mainStyle = {
-    marginTop: 100,
-    width:'auto',
-    maxWidth:820
-  }
-
   render() {
     return (
       <React.Fragment>
         {/* <NavBar /> */}
-        <main style={this.mainStyle} className='container'>
+        <div className='container'>
           <Profile />
           <Summary />
           <Experiences />
           <Educations />
-        </main>
+        </div>
       </React.Fragment>
     );
   }

@@ -7,17 +7,17 @@ class Experiences extends Component {
         return (
             <React.Fragment>
                 <div className="row">
-                    <div className="col">
+                    <div className="col-lg offset-2">
                         <h2>
                             Experiences
                         </h2>
                     </div>
                 </div>
                 <div className='row'>
-                    <div className='col'>
+                    <div className='col-lg offset-2'>
                         {
                             ExperienceData.map((exp, index) => {
-                                return <div className='p-2'><Experience
+                                return <div className='p-2' key={exp.id}><Experience
                                     key={exp.id}
                                     xp={exp}
                                 /></div>

@@ -12,19 +12,19 @@ class Educations extends Component {
         return (
             <React.Fragment>
                 <div className='row'>
-                    <div className='col'>
+                    <div className='col offset-2'>
                         <h2>
                             Educations
                         </h2>
                     </div>
                 </div>
                 <div className='row'>
-                    <div className='col'>
+                    <div className='col offset-2'>
                         {
-                            this.state.courses.map(course => <ul key={course.id}><Education
+                            this.state.courses.map(course => <div className='p-2' key={course.id}><Education
                                 key={course.id}
                                 currentCourse={course}
-                            /></ul>)
+                            /></div>)
                         }
                     </div>
                 </div>

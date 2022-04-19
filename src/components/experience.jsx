@@ -22,13 +22,13 @@ class Experience extends Component {
         return (
             <React.Fragment>
                 <div className='row'>
-                    <div className='col-6'>
+                    <div className='col-lg-6'>
                         <h5 style={this.positionStyle}>
                             {this.props.xp.position}
                             <small className="text-muted"> @ {this.props.xp.companyName}</small>
                         </h5>
                     </div>
-                    <div className='col-6'>
+                    <div className='col-lg-2'>
                         <h6 style={this.dateStyle}>
                             {this.props.xp.startDate} - {this.getEndDate(this.props.xp.endDate)}
                         </h6>
@@ -39,9 +39,9 @@ class Experience extends Component {
                         this.props.xp.webURL
                     }
                     </a>
-                    <p style={this.summaryStyle}>
+                    <div style={this.summaryStyle} className='col-lg-8'>
                         {this.props.xp.summary}
-                    </p>
+                    </div>
                 </div>
             </React.Fragment>
         );

@@ -6,21 +6,23 @@ import Profile from './components/profile';
 import Summary from './components/summary';
 import Experiences from './components/experiences';
 import Educations from './components/educations';
+import Calculator from './pages/calculator';
+import { BrowserRouter as Router, Routes, Route }
+  from 'react-router-dom';
+import ReactResume from './pages/reactResume';
 
 class App extends Component {
   state = {}
 
   render() {
     return (
-      <React.Fragment>
-        {/* <NavBar /> */}
-        <div className='container'>
-          <Profile />
-          <Summary />
-          <Experiences />
-          <Educations />
-        </div>
-      </React.Fragment>
+      <Router>
+        <Routes>
+          <Route path='/calculator' element={<Calculator />} />
+          <Route path='/react-resume' element={<ReactResume />} />
+        </Routes>
+      </Router>
+
     );
   }
 }

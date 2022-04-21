@@ -1,6 +1,6 @@
 {
-  "homepage": "http://prashant-singh.github.io/react-practice",
-  "name": "react-resume",
+  "homepage": "http://prashant-singh.github.io/react",
+  "name": "react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

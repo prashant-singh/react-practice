@@ -12,8 +12,8 @@ class App extends Component {
     return (
       <Router>
         <Routes>
-          <Route path='react/calculator' element={<Calculator />} />
-          <Route path='react/react-resume' element={<ReactResume />} />
+          <Route path='react-practice/calculator' element={<Calculator />} />
+          <Route path='react-practice/react-resume' element={<ReactResume />} />
         </Routes>
       </Router>
 

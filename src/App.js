@@ -10,7 +10,7 @@ class App extends Component {
 
   render() {
     return (
-      <Router basename='/'>
+      <Router basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path='/calculator' element={<Calculator />} />
           <Route path='/react-resume' element={<ReactResume />} />

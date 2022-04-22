@@ -10,10 +10,10 @@ class App extends Component {
 
   render() {
     return (
-      <Router>
+      <Router basename='/'>
         <Routes>
-          <Route path='react-practice/calculator' element={<Calculator />} />
-          <Route path='react-practice/react-resume' element={<ReactResume />} />
+          <Route path='/calculator' element={<Calculator />} />
+          <Route path='/react-resume' element={<ReactResume />} />
         </Routes>
       </Router>
 

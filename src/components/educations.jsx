@@ -7,15 +7,23 @@ class Educations extends Component {
             { id: 1, courseName: "Bachelor of Engineering in Computer Science", instituteName: "Saffrony Institute of Technology", board: "GTU", passingYear: '2011 - 2015' }
         ]
     }
+    titleStyle = {
+        backgroundColor: '#000000',
+        color: '#ffffff',
+        display: 'inline-flex',
+        padding: '4px',
+        fontSize: '8pt',
+        marginTop: '10pt'
+    }
 
     render() {
         return (
             <React.Fragment>
                 <div className='row'>
                     <div className='col offset-2'>
-                        <h2>
-                            Educations
-                        </h2>
+                        <p style={this.titleStyle}>
+                            EDUCATIONS
+                        </p>
                     </div>
                 </div>
                 <div className='row'>

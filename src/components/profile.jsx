@@ -1,28 +1,36 @@
-import React, { Component } from 'react';
+import React, { Component, useSyncExternalStore } from 'react';
 
-const Profile = () => {
-    return (
-        <React.Fragment>
-            <div className="row">
-                <div className="col offset-2">
-                    <h1>
-                        Prashant Singh
-                    </h1>
+class Profile extends Component {
+    profileStyle = {
+        backgroundColor: '#ffe14d'
+    }
+    render() {
+
+        return (
+            <React.Fragment>
+                <div style={this.profileStyle}>
+                    <div className="row">
+                        <div className="col offset-2">
+                            <h1>
+                                PRASHANT SINGH
+                            </h1>
+                        </div>
+                    </div>
+                    <div className='row'>
+                        <div className='col offset-2'>
+                            <h5 className='small'>
+                                Sr. Software Engineer
+                                @ Byju's
+                            </h5>
+                            <h5 className='small'>
+                                Ahmedabad, Gujarat, IN
+                            </h5>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div className='row'>
-                <div className='col offset-2'>
-                    <h5 className='lead'>
-                        Sr. Software Engineer
-                        <small className="text-muted"> @ Byju's</small>
-                    </h5>
-                    <h5 className='small'>
-                        Ahmedabad, Gujarat, IN
-                    </h5>
-                </div>
-            </div>
-        </React.Fragment>
-    );
+            </React.Fragment >
+        );
+    }
 }
 
 export default Profile;

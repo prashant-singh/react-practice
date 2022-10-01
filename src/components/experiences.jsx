@@ -3,14 +3,22 @@ import Experience from './experience';
 import ExperienceData from '../data/experience.json';
 
 class Experiences extends Component {
+    titleStyle = {
+        backgroundColor: '#000000',
+        color: '#ffffff',
+        display: 'inline-flex',
+        padding: '4px',
+        fontSize: '8pt',
+        marginTop: '10pt'
+    }
     render() {
         return (
             <React.Fragment>
                 <div className="row">
                     <div className="col-lg offset-2">
-                        <h2>
-                            Experiences
-                        </h2>
+                        <p style={this.titleStyle}><span>
+                            EXPERIENCES</span>
+                        </p>
                     </div>
                 </div>
                 <div className='row'>
